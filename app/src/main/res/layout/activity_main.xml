@@ -28,7 +28,7 @@
 
     <Button
         android:id="@+id/btnSelectDate"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="@color/button_tint"
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="#5D4037"
+        android:textColor="#AC4B2D"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/selected_date"
-        android:textColor="@color/gray_text"
+        android:textColor="#FF1E1919"
         android:textSize="14sp"
         android:textStyle="bold" />
 

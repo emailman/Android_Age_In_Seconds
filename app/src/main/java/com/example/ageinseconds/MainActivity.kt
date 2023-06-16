@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                         "$pickedDay/$pickedYear"
                 txtDateSelected.text = dateSelected
 
+
                 // Convert selected date to SDF
                 val sdf = SimpleDateFormat("MM/dd/yyyy",
                     Locale.ENGLISH)
