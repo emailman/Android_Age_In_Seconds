@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Assign variable for GUI widgets
+        // Initialize variables for GUI widgets
         txtDateSelected = findViewById(R.id.txtDateSelected)
         btnSelectDate = findViewById(R.id.btnSelectDate)
         txtMinutesOld = findViewById(R.id.txtMinutesOld)
@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                 val sdf = SimpleDateFormat("MM/dd/yyyy",
                     Locale.ENGLISH)
                 val selectedDate = sdf.parse(dateSelected)
+
                 // Only process if selected date is not null
                 selectedDate?.let {
                     // Calculate the selected date in minutes
@@ -59,6 +60,7 @@ class MainActivity : AppCompatActivity() {
                     // Get current date and calculate the value in minutes
                     val currentDate = sdf.parse(sdf.format(
                         (System.currentTimeMillis())))
+
                     // Only process if current date is not null
                     currentDate?.let {
                         val currentDateInMinutes =
